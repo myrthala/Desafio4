@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MangelArts</title>
+    <link rel="shortcut icon" href="resources/favicon-16x16_MangelArtsB.png">
+    <!-- Font awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+
+<header>
+    <div class="header__logo">
+        <a href="index.html"> <img src="resources/imageLogoMangelArts.jpg" alt="MangelArts"> </a>            
+    </div>
+    <label for="menu" class="header__burgerMenu">
+        <i class="fa-solid fa-bars"></i>
+    </label>
+    <input type="checkbox" id="menu">
+    <nav class="header__menu">
+        <label for="menu" class="header__closeMenu">
+            <i class="fa-solid fa-circle-xmark"></i>
+        </label>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="pages/about.html">Acerca de</a></li>
+            <li><a href="pages/gallery.html">Galería</a></li>
+            <li><a href="pages/commissions.html">Comisiones</a></li>
+            <li><a href="pages/contact.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div id="grid">
+
+    <main class="home__mainContainer">
+        <h1 class="home__title">MangelArts</h1>
+        <section class="home__categoriesContainer">
+          <article class="home__category--image" id="category__image1">
+            <div class="filter"></div>
+            <a href="./pages/gallery.html#retrato" class="home__category--link">Retrato</a>
+          </article>
+          <article class="home__category--image" id="category__image2">
+            <div class="filter"></div>
+            <a href="./pages/gallery.html#fantasia" class="home__category--link">Fantasía</a>
+          </article>
+          <article class="home__category--image" id="category__image3">
+            <div class="filter"></div>
+            <a href="./pages/gallery.html#diosas" class="home__category--link">Diosas</a>
+          </article>
+        </section>
+  
+        <section id="home__table"><!--tabla informativa-->
+            <table>
+            <caption class="home__tableTitle">Colección Diosas</caption>
+            <tbody>
+                <tr class="home__tableHeaders">
+                    <th>Ilustración</th>
+                    <th>Nombre</th>
+                    <th>Características</th>
+                    <th>Reseña</th>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="resources/imageDaughterOfZeus.jpg" alt="Daughter of Zeus">
+                    </td>
+                    <td>
+                        <div class="MasterpieceTitle">
+                            Daugher of Zeus</td>
+                        </div>
+                    <td>
+                        <div class="MasterpieceDataSheet">
+                            <ul type="circle">
+                                <li>Impresión sobre lienzo</li>
+                                <li>75x50cm</li>
+                                <li>Montado en bastidor</li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="MasterpieceDescription">
+                            Born of Zeus, a warrior goddess in Greek mythology, she was conferred the gifts of strategy, science, and skill.
+                        </div>
+                        </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="resources/imageImagen.jpg" alt="Diosa2" style="width: 80px;">
+                    </td>
+                    <td>
+                            <div class="MasterpieceTitle">
+                                Diosa 2
+                            </div>
+                        </td>
+                    <td>
+                        <div class="MasterpieceDataSheet">
+                            <ul type="circle">
+                                <li>Impresión sobre lienzo</li>
+                                <li>75x50cm</li>
+                                <li>Montado en bastidor</li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="MasterpieceDescription">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quis in delectus ab neque molestiae sit itaque, ipsam soluta aliquid!</td>
+                        </div>
+                </tr>
+            </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="index__topButton">
+            <a href="#top" class="goUp"> <img src="resources/iconIrArriba.jpg" alt="Ir arriba" style="width: 30px;"></a>
+        </div>
+        <div class="footer__socialMediaContainer">
+            <a href="https://www.facebook.com/mangelarte" class="socialMedia" id="logoFace"><img src="resources/iconFacebookB.jpg" alt="" style="width: 30px;"></a>
+            <a href="https://www.instagram.com/mangelarte/" class="socialMedia" id="logoInsta"><img src="resources/iconInstagramB.jpg" alt="" style="width: 30px;"></a>
+            <a href="https://www.tiktok.com/@mangelarts" class="socialMedia" id="logoTiktok"><img src="resources/iconTiktokb.jpg" alt="" style="width: 30px;"></a>
+            <a href="https://www.behance.net/mangelart" class="socialMedia" id="logoBehance"><img src="resources/iconBehanceB.jpg" alt="" style="width: 30px;"></a>
+        </div>
+    </footer>
+</div>

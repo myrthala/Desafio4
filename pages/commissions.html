@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu sueño hecho ilustración</title>
+    <link rel="shortcut icon" href="../resources/favicon-16x16_MangelArtsB.png">
+    <!-- Font awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="../css/style.css">
+    </head>
+<header>
+        <div class="header__logo">
+            <a href="../index.html"> <img src="../resources/imageLogoMangelArts.jpg" alt="MangelArts"> </a>            
+        </div>
+        <label for="menu" class="header__burgerMenu">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <input type="checkbox" id="menu">
+        <nav class="header__menu">
+            <label for="menu" class="header__closeMenu">
+                <i class="fa-solid fa-circle-xmark"></i>
+            </label>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/about.html">Acerca de</a></li>
+                <li><a href="../pages/gallery.html">Galería</a></li>
+                <li><a href="../pages/commissions.html">Comisiones</a></li>
+                <li><a href="../pages/contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+</header>
+
+<body>
+    <main class="home__mainContainer">
+        <section>
+            <h1 class="header__title">¡Tu sueño hecho ilustración!</h1>
+            <h1 class="header__title">Solicita aquí tu cotización</h1>
+        </section>
+        <section >
+            <div class="commissions__image"><!--Ilustración representativa.-->
+                <img src="../resources/imageImagen.jpg" alt="Cotización">
+            </div>
+            <div class="commissions__box">
+                <form action="/ruta'destino" method="get" enctype="">
+                    <fieldset>
+                        <label for="">Tipo de iulstración: </label>
+                        <select name="illustrationType">
+                            <option value="" hidden selected>Elige de la lista</option>
+                            <option value="portrait">Retrato</option>
+                            <option value="fafntasy">Fantasía</option>
+                            <option value="drawing">Dibujo</option>
+                            <option value="unknown">No sé</option>
+                        </select>
+    
+                        <label for="">Descripción/comentarios: </label><br><!--Descripción del proyecto.-->
+                        <textarea name="dreamDescription" id="dream" placeholder="Descríbenos tu sueño. ¡Sin límites!" cols="150" rows="20"></textarea><br>
+                        <div class="clear_and_submit_buttons">
+                            <button type="reset">Limpiar campos</button>
+                            <button type="submit">Enviar solicitud</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="commissions__topButton">
+            <a href="#top" class="goUp"> <img src="../resources/iconIrArriba.jpg" alt="Ir arriba" style="width: 30px;"></a>
+        </div>
+        <div class="footer__socialMediaContainer">
+            <a href="https://www.facebook.com/mangelarte" class="socialMedia" id="logoFace"><img src="../resources/iconFacebookB.jpg" alt="" style="width: 30px;"></a>
+            <a href="https://www.instagram.com/mangelarte/" class="socialMedia" id="logoInsta"><img src="../resources/iconInstagramB.jpg" alt="" style="width: 30px;"></a>
+            <a href="https://www.tiktok.com/@mangelarts" class="socialMedia" id="logoTiktok"><img src="../resources/iconTiktokb.jpg" alt="" style="width: 30px;"></a>
+            <a href="https://www.behance.net/mangelart" class="socialMedia" id="logoBehance"><img src="../resources/iconBehanceB.jpg" alt="" style="width: 30px;"></a>
+        </div>
+    </footer>
+    
+</body>
+</html>
