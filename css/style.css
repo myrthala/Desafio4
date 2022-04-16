@@ -400,3 +400,123 @@ div.MasterpieceDescription {
 /* +++++++++++++++++> */
 /* FIN ABOUT */
 /* +++++++++++ */
+
+/* +++++++++++++++++> */
+/* GALLERY */
+/* +++++++++++ */
+
+#gallery__grid {
+  padding: 2rem;
+  background-color: white;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  margin: 4rem auto;
+  /* Grid */
+  display: grid;
+  grid-template-rows: 50px repeat(3, 1fr);
+}
+
+.gallery__section--header {
+  grid-area: título;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.img__1 {
+  grid-area: principal;
+}
+
+.img__2 {
+  grid-area: img2;
+}
+.img__3 {
+  grid-area: img3;
+}
+.img__4 {
+  grid-area: img4;
+}
+.img__5 {
+  grid-area: img5;
+}
+
+#gallery__grid .gallery__section--grid {
+  min-height: 100vh;
+  margin: 1rem 0;
+  padding: 2rem 0.5rem;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  /* GRID */
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: 50px 300px repeat(2, 200px);
+  grid-template-areas:
+    "título título"
+    "principal principal "
+    "img2 img3"
+    "img4 img5";
+}
+
+#gallery__grid .gallery__section--grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery__topButton {
+  background-color: white;
+  height: 4rem;
+  width: 4rem;
+  color: gray;
+  display: flex;
+  font-size: 3rem;
+  border-radius: 50%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+}
+
+/* Media queries */
+
+@media screen and (min-width: 768px) {
+
+  .gallery__section--header {
+    font-size: 2.5rem;
+  }
+
+  @media screen and (min-width: 768px) {
+    @keyframes left-in{
+      0% {
+        left: -100%;
+      }
+      100% {
+        left: 0%;
+      }
+    }
+  }
+
+  #gallery__grid h1{
+  position: relative;
+  font-size: 2rem;
+  text-align: center;
+  animation-name: left-in;
+  animation-duration: 2s;
+  }
+
+  #gallery__grid .gallery__section--grid {
+    margin: 2rem 0;
+    padding: 4rem;
+    /* GRID */
+    grid-template-columns: 40% repeat(2, 30%);
+    grid-template-rows: 50px repeat(2, 300px);
+    grid-template-areas:
+      "título título título"
+      "principal img2 img3"
+      "principal img4 img5";
+  }
+}
+
+/* +++++++++++++++++> */
+/* FIN GALLERY */
+/* +++++++++++ */
